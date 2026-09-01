@@ -1,0 +1,16 @@
+{
+    "name": "taskflow",
+    "version": "0.1.0",
+    "description": "TaskFlow — a real-world task manager app built during the Git Basics Course",
+    "main": "app.js",
+    "scripts": {
+        "start": "npx live-server --port=3000 --open=index.html",
+        "lint": "npx eslint app.js"
+    },
+    "keywords": [ "task-manager", "git-course", "vanilla-js" ],
+    "author": "",
+    "license": "MIT",
+    "devDependencies": {
+        "live-server": "^1.2.2"
+    }
+}

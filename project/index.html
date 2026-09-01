@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TaskFlow — Git Basics Course Project</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app">
+    <!-- Header -->
+    <header class="app-header">
+      <div class="header-content">
+        <h1 class="app-title">
+          <span class="icon">✓</span> TaskFlow
+        </h1>
+        <p class="app-subtitle">Your personal task manager</p>
+      </div>
+      <div class="header-stats">
+        <span class="stat" id="stat-total">0 tasks</span>
+        <span class="stat stat--done" id="stat-done">0 done</span>
+      </div>
+    </header>
+
+    <!-- Add Task Form -->
+    <section class="add-task-section">
+      <form class="add-task-form" id="add-task-form" novalidate>
+        <div class="form-row">
+          <input
+            type="text"
+            id="task-input"
+            class="task-input"
+            placeholder="What needs to be done?"
+            maxlength="120"
+            autocomplete="off"
+            required
+          />
+          <button type="submit" class="btn btn--primary" id="add-btn">
+            Add Task
+          </button>
+        </div>
+        <div class="form-row form-row--meta">
+          <select id="priority-select" class="select">
+            <option value="medium">⚡ Medium priority</option>
+            <option value="high">🔴 High priority</option>
+            <option value="low">🟢 Low priority</option>
+          </select>
+          <input
+            type="date"
+            id="due-date-input"
+            class="date-input"
+            title="Due date (optional)"
+          />
+        </div>
+        <p class="form-error" id="form-error" aria-live="polite"></p>
+      </form>
+    </section>
+
+    <!-- Filter & Sort Bar -->
+    <section class="filter-bar">
+      <div class="filter-group">
+        <label class="filter-label">Filter:</label>
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="active">Active</button>
+        <button class="filter-btn" data-filter="completed">Completed</button>
+      </div>
+      <div class="filter-group">
+        <label class="filter-label">Priority:</label>
+        <select id="priority-filter" class="select select--sm">
+          <option value="all">All</option>
+          <option value="high">High</option>
+          <option value="medium">Medium</option>
+          <option value="low">Low</option>
+        </select>
+      </div>
+      <button class="btn btn--ghost btn--sm" id="clear-completed-btn">
+        Clear completed
+      </button>
+    </section>
+
+    <!-- Task List -->
+    <main class="task-list-container">
+      <ul class="task-list" id="task-list" aria-label="Task list">
+        <!-- Tasks rendered by app.js -->
+      </ul>
+      <div class="empty-state" id="empty-state" hidden>
+        <p>🎉 No tasks here! Add one above.</p>
+      </div>
+    </main>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

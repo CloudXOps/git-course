@@ -1,0 +1,41 @@
+{
+    "folders": [
+        {
+            "name": "Git Basics Course",
+            "path": "."
+        }
+    ],
+    "settings": {
+        "editor.wordWrap": "on",
+        "editor.fontSize": 14,
+        "editor.tabSize": 2,
+        "files.autoSave": "onFocusChange",
+        "terminal.integrated.defaultProfile.linux": "zsh",
+        "git.enableSmartCommit": true,
+        "git.confirmSync": false,
+        "git.autofetch": true,
+        "editor.formatOnSave": true,
+        "explorer.fileNesting.enabled": true,
+        "explorer.fileNesting.patterns": {
+            "*.html": "${capture}.css, ${capture}.js"
+        },
+        "workbench.colorCustomizations": {
+            "activityBar.background": "#1a1a2e",
+            "statusBar.background": "#16213e"
+        }
+    },
+    "extensions": {
+        "recommendations": [
+            "eamodio.gitlens",
+            "mhutchie.git-graph",
+            "donjayamanne.githistory",
+            "github.vscode-pull-request-github",
+            "esbenp.prettier-vscode",
+            "ritwickdey.liveserver"
+        ]
+    },
+    "launch": {
+        "version": "0.2.0",
+        "configurations": [ ]
+    }
+}

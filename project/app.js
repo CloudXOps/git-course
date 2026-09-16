@@ -14,7 +14,7 @@
 
 // ── Constants ────────────────────────────────────────────────────────────────
 
-const STORAGE_KEY = 'taskflow-tasks';
+const STORAGE_KEY = 'taskflow-tasks-1';
 
 const PRIORITY_LABELS = {
   high:   { label: 'High',   icon: '🔴' },

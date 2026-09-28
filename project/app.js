@@ -14,7 +14,7 @@
 
 // ── Constants ────────────────────────────────────────────────────────────────
 const TEST_NAME = 'TEST1';
-const APP_NAME = 'TaskFlow Pro';
+const APP_NAME = 'TaskFlow Max Pro';
 const STORAGE_KEY = 'taskflow-tasks-1';
 
 const PRIORITY_LABELS = {

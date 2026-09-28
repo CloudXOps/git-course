@@ -13,7 +13,7 @@
 'use strict';
 
 // ── Constants ────────────────────────────────────────────────────────────────
-const TEST_NAME = 'TEST1';
+const TEST_NAME = 'TEST2';
 const APP_NAME = 'TaskFlow Max Pro';
 const STORAGE_KEY = 'taskflow-tasks-1';
 
